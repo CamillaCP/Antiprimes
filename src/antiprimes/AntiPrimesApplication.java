@@ -20,6 +20,7 @@ public class AntiPrimesApplication {
             public void run() {
                 MainWindow window = new MainWindow(sequence);
                 window.setVisible(true);
+                sequence.addObserver(window);
             }
         });
     }
